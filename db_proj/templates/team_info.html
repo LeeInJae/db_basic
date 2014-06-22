@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <meta charset="UTF-8" />
+    <title>보고싶은 팀이름을 입력해 주세요</title> 
+</head> 
+<body> 
+    <h1>팀이름을 입력해 주세요</h1> 
+    <hr /> 
+    <br /> 
+    <form action="/show_team_info" method = "post"> 
+        <fieldset> 
+            <legend>팀 정보 보기</legend> 
+            <table> 
+                <tr> 
+                    <td><label for="id">팀 이름</label></td> 
+                    <td><input type="text" name="team"></td> 
+                </tr>  
+                <tr> 
+                    <td colspan="2" align="right"> 
+                        <input type="submit" value="확인"> 
+                    </td> 
+                </tr> 
+            </table> 
+        </fieldset> 
+    </form> 
+</body>

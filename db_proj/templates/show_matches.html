@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <meta charset="UTF-8" />
+    <title>경기 정보를 보실 수 있습니다</title> 
+</head> 
+<body> 
+    <h1>언제의 경기정보를 보고 싶으신가요? ex)2014-05-20</h1> 
+    <hr /> 
+    <br /> 
+    <form action="/show_matches_info" method = "post"> 
+        <fieldset> 
+            <legend>경기 정보 보기</legend> 
+            <table> 
+                <tr> 
+                    <td><label for="id">날짜 입력</label></td> 
+                    <td><input type="text" name="date"></td> 
+                </tr>  
+                <tr> 
+                    <td colspan="2" align="right"> 
+                        <input type="submit" value="확인"> 
+                    </td> 
+                </tr> 
+            </table> 
+        </fieldset> 
+    </form> 
+</body>

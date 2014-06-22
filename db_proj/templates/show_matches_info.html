@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>스포츠 토토</title>
+</head>
+
+<body>
+	<form action="/">
+		{% for row in name %}
+    		<h2>{{row}}</h2><br>
+		{% endfor %}
+		<input type="submit" value = "메인으로 돌아가기">
+	</form>
+	<form action="/recommned_team" method = "post"> 
+        <fieldset> 
+            <legend>추천팀 보기</legend> 
+            <table> 
+                <tr> 
+                    <td><label for="id">경기 번호</label></td> 
+                    <td><input type="text" name="matchnumber"></td> 
+                </tr>  
+                <tr> 
+                    <td colspan="2" align="right"> 
+                        <input type="submit" value="경기번호 입력하여 추천팀 보기"> 
+                    </td> 
+                </tr> 
+            </table> 
+        </fieldset> 
+    </form> 
+    <form action="/bet_go" method = "post"> 
+        <fieldset> 
+            <legend>경기 번호 입력하여 배팅하기</legend> 
+            <table> 
+                <tr> 
+                    <td><label for="id1">경기 번호</label></td> 
+                    <td><input type="text" name="matche_number"></td> 
+                </tr>
+                <tr> 
+                    <td><label for="id2"> 팀이름 </label></td> 
+                    <td><input type="text" name="team_name"></td> 
+                </tr>
+                <tr> 
+                    <td><label for="id3">배팅 금액</label></td> 
+                    <td><input type="text" name="bet_money"></td> 
+                </tr>  
+                <tr> 
+                    <td colspan="2" align="right"> 
+                        <input type="submit" value="배팅하기"> 
+                    </td> 
+                </tr> 
+            </table> 
+        </fieldset> 
+    </form> 
+</body>
